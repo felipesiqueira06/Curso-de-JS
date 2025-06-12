@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.curso{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.c1{
+    background-color: grey;
+    color: black;
+    border: 2px solid purple;
+}
+
+.c2{
+    background-color: black;
+    color: gray;
+    border: 2px solid purple;
+}

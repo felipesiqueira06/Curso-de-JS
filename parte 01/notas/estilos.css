@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+    background-color: lightblue;
+    margin-top: -28px;
+    padding-top: 20px;
+}
+
+header > p {
+    font-size: 1.3em;
+
+}
+
+section{
+    text-align: center;
+}
+
+section > select{
+    width: 200px;
+    
+}
+
+option{
+ padding-left: 5px;
+ padding-right: 5px;
+ padding-bottom: 10px;
+ font-size: 1.3em;
+}
+
+
+div{
+    background-image: url(pexels-pixabay-268349.jpg);
+    background-position: center top;
+    background-attachment: scroll;
+    background-size: contain;
+}
+

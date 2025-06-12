@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            background-color: lightgray;
+            text-align: center;
+        }
+        input{
+            width: 100px;
+        }
+        
+        input#env{
+            width: 80px;
+            border-radius: 10px;
+        }
+
+        div{
+            padding-top: 10px;
+            font-size: 1.3em;
+        }
+        p{
+            font-size: 1.2em;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Brasileiro ou Estrangeiro ?</h1>
+      <p> Onde você mora: <input type="text" name="est" id="est"> 
+       <input type="button" id="env" value="Enviar" onclick="nac()"> </p>
+       <div id="res"></div>
+
+
+
+       <script>
+        function nac(){
+            var país = document.getElementById('est')
+            var res = document.getElementById('res')
+            if(país.value == 'Brasil'){
+                res.innerHTML += ('Você é Brasileiro!')
+                res.style.color = 'green'
+            } else{
+                res.innerHTML += ('Você é Estrangeiro!')
+                res.style.color = 'black'
+            }
+
+        }
+
+
+       </script>
+</body>
+</html>
