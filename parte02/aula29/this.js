@@ -1,5 +1,6 @@
 function aluno(nome,nota){
-    this.nome =nome //variavel declarada para função aluno que recebe o valor do parametro nome.
+    this.nome =nome 
+    //variavel declarada para função aluno que recebe o valor do parametro nome.
     this.nota = nota
 
     this.dados_anonimo=function(){
