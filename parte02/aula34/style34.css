@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.curso{
+    display: flex;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.c1{
+    background-color: grey;
+    color: black;
+    border: 2px solid purple;
+    justify-content: center;
+    align-items: center;
+}
+
+.c2{
+    background-color: black;
+    color: gray;
+    border: 2px solid purple;
+    justify-content: center;
+    align-items: center;
+}
+
+.destaque{
+    background-color: rgb(255, 93, 93);
+    color: lightgray;
+    border: 2px solid red;
+    justify-content: center;
+    align-items: center;
+    
+}
