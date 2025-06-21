@@ -22,7 +22,7 @@ btn.addEventListener("click", ()=>{
 })
 
 btnc.addEventListener("click", ()=>{
-    const desmarcados = [...document.querySelectorAll(".c1")]
+    const desmarcados = [...document.querySelectorAll(".curso:not(.selecionado)")]
     desmarcados.map((el)=>{
         caixa1.appendChild(el)
     })
