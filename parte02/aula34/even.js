@@ -7,6 +7,9 @@ cursos.map((el)=>{
     })
 })
 
+/*evt: quem disparou o evento
+  target: traz o elemento que disparou o evento*/ 
+
 
 //const msg=()=>{
 //    alert("CLICOU")
