@@ -17,6 +17,11 @@ button{
     cursor: pointer;
     border-radius: 10px;
 }
+
+#btnAdicionarNovoCursoDps{
+    margin-top: 10px;
+}
+
 .curso{
     display: flex;
     justify-content: center;
