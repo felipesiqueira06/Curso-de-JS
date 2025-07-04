@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.verde{
+    background-color: rgb(169, 228, 169);
+    height: 30px;
+    border: 6px solid green;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.azul{
+    background-color: rgb(168, 168, 233);
+    height: 90px;
+    border: 6px solid blue;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#txt_pesquisar{
+    height: 30px;
+    width: 170px;
+    display: block;
+    border-radius: 7px;
+}
+
+#pesquisar{
+    background-color: blue;
+    border-radius: 7px;
+    text-align: center;
+    margin-top: 5px;
+    height: 30px;
+    color: white;
+    width: 130px;
+
+}
+
+.vermelho{
+    background-color: rgb(255, 195, 195);
+    height: 30px;
+    border: 6px solid rgba(117, 0, 0, 0.897);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
