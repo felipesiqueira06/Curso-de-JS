@@ -3,12 +3,12 @@ const p_array = document.getElementById("array")
 const verificar = document.getElementById("btn_verificar")
 const res =  document.getElementById("resultado")
 
-const elementos = [22,99,43,27,63]
+const elementos = [12,9,6,18,16]
 p_array.innerHTML="["+elementos+"]"
 
 verificar.addEventListener("click", (evt)=>{
     
-   const ret = elementos.every((el,i)=>{
+   const ret = elementos.some((el,i)=>{
         if(el<18){
             res.innerHTML="Array não conforme na posição " + i
         }
@@ -20,6 +20,4 @@ verificar.addEventListener("click", (evt)=>{
     }
 })
 
-
-
-//every: TODOS elementos coincidam com oq foi determinado (nesse caso o array ser >= 18)
+//some: Pelo menos UM elemento concidir com oque foi determinado
