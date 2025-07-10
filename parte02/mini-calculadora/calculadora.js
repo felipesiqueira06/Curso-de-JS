@@ -11,36 +11,34 @@ const btn_divi = document.querySelector("#div")
 
 
 const op = [
-    
-    }, 
-    (valores) =>{
-        res = 0
-        for(v of valores){
-            res = valores[0]
-            res = valores[0] - valores[1]
-        }
-        resultadoFinal.value = res
-        
+    ()=>{
+       const v1 = Number(resultado1.value)
+        const v2 = Number(resultado2.value)
+        resultadoFinal.innerHTML = v1 + v2
 
-    },
-    
-    (valores)=>{
-        res = 1
-        for(v of valores){
-            res *= v
-        }
-         resultadoFinal.value = res
+    }
+    , 
+    () =>{
+    const v1 = Number(resultado1.value)
+    const v2 = Number(resultado2.value)
+    resultadoFinal.innerHTML = v1 - v2
+
         
     },
+    
+    ()=>{
+      const v1 = Number(resultado1.value)
+        const v2 = Number(resultado2.value)
+        resultadoFinal.innerHTML = v1 * v2
 
-    (valores)=>{
-        res = 1
-        for(v of valores){
-            valores[0] = res
-            res = res / valores[1]
+        
+    },
 
-        }
-         resultadoFinal.value = res
+    ()=>{
+     const v1 = Number(resultado1.value)
+        const v2 = Number(resultado2.value)
+        resultadoFinal.innerHTML = v1 / v2
+
         
     }
 ]
