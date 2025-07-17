@@ -1,3 +1,9 @@
+const nomeForm = document.getElementById("f_nome")
+const idadeForm = document.getElementById("i_nome")
+const btn =  document.getElementById("btn_add")
+const res = document.querySelector(".res")
+
+
 const pessoa = {
     nome,
     idade,
@@ -15,7 +21,22 @@ const pessoa = {
     }
 }
 
-const p2 = pessoa
-const p3 = pessoa
+const add=()=>{
+    res.innerHTML = ""
+    const div = document.createElement("div")
+    div.innerHTML = `Nome: ${pessoa.nome} <br/>
+    Idade: ${pessoa.idade}`
+    res.appendChild(div)
 
-p3.nome="Julio"
+}
+
+btn.addEventListener("click", ()=>{
+    if(nomeForm.value !== "" && idadeForm.value !== ""){
+        pessoa.setIdade(idadeForm.value)
+        pessoa.setNome(nomeForm.value)
+         add()
+    }
+    inputNome.focus()
+})
+
+
