@@ -31,9 +31,11 @@ const add=()=>{
 }
 
 btn.addEventListener("click", ()=>{
-    if(nomeForm.value !== "" && idadeForm.value !== ""){
+    if(nomeForm.value!== "" && idadeForm.value!== ""){
         pessoa.setIdade(idadeForm.value)
         pessoa.setNome(nomeForm.value)
+        nomeForm.value = ""
+        idadeForm.value = ""
          add()
     }
     inputNome.focus()
