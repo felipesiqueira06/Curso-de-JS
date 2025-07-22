@@ -43,6 +43,7 @@ class Militar extends Carros{ // classe filho
 const c2 = new Militar("ANIQUILADOR", 1, 100, 3)
 c2.atirar()
 c2.atirar()
+
 console.log(`Nome: ${c2.nome}`)
 console.log(`Portas: ${c2.portas}`)
 console.log(`Ligado: ${(c2.ligado?"Sim":"Não")}`)
