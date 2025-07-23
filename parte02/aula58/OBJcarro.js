@@ -9,6 +9,14 @@ const f_portas = document.querySelector("#f_portas")
 
 let a_carros = []
 
+const removerCarro =(quem)=>{
+   a_carros = a_carros.filter((el)=>{
+    return el.nome != quem
+
+    })
+
+}
+
 tipoMilitar.addEventListener("click", (evt)=>{
     blindagem.value = 0
     municao.value=0
@@ -33,13 +41,23 @@ const exibiCarro=()=>{
     carros.innerHTML = ""
     a_carros.map((el)=>{
         const div = document.createElement("div")
+        const btn = document.createElement("button")
+        btn.addEventListener("click", (evt)=>{
+            const removido = evt.target.parentNode.dataset.nome
+            removerCarro(removido)
+            exibiCarro()
+
+        })
         div.setAttribute("class","carro")
+        div.setAttribute("data-nome", el.nome)
         div.innerHTML= `Nome: ${el.nome} </br>`
         div.innerHTML+= `Portas: ${el.portas} </br>`
         div.innerHTML+= `Cor: ${el.cor} </br>`
         div.innerHTML+= `Blindagem: ${el.blindagem} </br>`
          div.innerHTML+= `Munição: ${el.municao} </br>`
+        btn.innerHTML = `remover`
         carros.appendChild(div)
+        div.appendChild(btn)
 
     })
 }
