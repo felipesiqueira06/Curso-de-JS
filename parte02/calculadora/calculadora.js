@@ -2,10 +2,13 @@ const teclasNum =[... document.querySelectorAll(".num")]
 const teclasOP = [...document.querySelectorAll(".op")]
 const teclaRes = document.querySelector(".res")
 const display = document.querySelector(".display")
-const tON = document.getElementById("tON")
+const tcpy = document.getElementById("tcpy")
 const tlimpar = document.getElementById("tlimpar")
+const calc_aba = document.getElementById("calc_aba")
+const calc =  document.getElementById("calc")
 let sinal = false 
 let decimal = false
+
 
 
 teclasNum.map((el)=>{
@@ -63,6 +66,13 @@ teclaRes.addEventListener("click", (evt)=>{
     display.innerHTML = res
 })
 
+tcpy.addEventListener("click",(evt)=>{
+    navigator.clipboard.writeText(display.innerHTML)
+})
+
+calc_aba.addEventListener("click",(evt)=>{
+   calc.classList.toggle("calc_exibir")
+})
 
 
 
