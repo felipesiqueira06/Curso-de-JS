@@ -11,6 +11,7 @@ let decimal = false
 
 
 
+
 teclasNum.map((el)=>{
     el.addEventListener("click", (evt)=>{
         sinal = false
@@ -71,7 +72,14 @@ tcpy.addEventListener("click",(evt)=>{
 })
 
 calc_aba.addEventListener("click",(evt)=>{
-   calc.classList.toggle("calc_exibir")
+    
+    calc.classList.toggle("calc_exibir")
+   if(calc.classList.contains("calc_exibir")){
+    calc_aba.innerHTML = "<"
+   }else{
+   calc_aba.innerHTML = ">"}
+
+   
 })
 
 
