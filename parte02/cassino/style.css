@@ -45,3 +45,36 @@
     color: white;
     border-radius: 10px;
 }
+
+#rodadas{
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    width: 100px;
+    height: 60px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.quantidade_rodadas{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(154, 153, 153);
+    width: 130px;
+    border: 3px solid rgb(91, 91, 91);
+    border-radius: 5px;
+    display: block;
+    
+}
+
+.esconde{
+    display: none;
+}
+
+
+
+
