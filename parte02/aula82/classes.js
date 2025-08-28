@@ -41,15 +41,20 @@ class Bola{
             if(b.id!=this.id){
                 return b
             }
-
         })
-
         this.eu.remove()
         numBola--
         num_objetos.innerHTML = numBola
     }
 
     desenhar=()=>{
+        const div = document.createElement("div")
+        div.setAttribute("id",this.id)
+        div.setAttribute("class","bola")
+        div.setAttribute("style", `left:${this.px};top:${this.py};width${this.tam};height:${this.tam};background-color:rgb(${this.r},${this.g},${this.b})`)
+        this.palco.appendChild(div)
+
+
     }
 
     controlar=()=>{
