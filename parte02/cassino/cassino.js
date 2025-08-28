@@ -7,6 +7,7 @@ const rodadas = document.getElementById("rodadas")
 const main = document.getElementById("container")
 const play = document.getElementById("play")
 const conteudo = document.getElementById("conteudo")
+const parar = document.getElementById("stop")
 
 let opcao = false
 let div10, div15, div20 
@@ -54,6 +55,7 @@ rodadas.addEventListener("click", ()=>{
    div10.addEventListener("click", () => {
     totalRodadas = 10  
     play.style.display = "flex"
+    parar.style.display = "flex"
       play.innerHTML = "Girar </br> 10 rodadas"
       fecharopcao()
       
@@ -77,6 +79,11 @@ rodadas.addEventListener("click", ()=>{
        
     })
 
+     parar.addEventListener("click", ()=>{
+          
+
+    })
+
     play.addEventListener("click", ()=>{
         let rodadaAtual = 1
 
@@ -98,7 +105,10 @@ rodadas.addEventListener("click", ()=>{
         }
 
         SortearNum()
+
     })
+
+    
 
    opcao = true
 
