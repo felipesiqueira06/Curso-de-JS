@@ -7,7 +7,7 @@ const jogadores = ["Lucas Moura", "Oscar", "Calleri", "Andre Silva"]
 //     return jogadores
 // }
 
-function todosNomes(){
+export default function todosNomes(){
     return jogadores
 }
 
