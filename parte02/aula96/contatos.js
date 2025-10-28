@@ -4,8 +4,11 @@ let contato = {
     getTodosContatos:function(){
         return contatos
     },
-    getContato:function(i_contato){
-        return contatos[i_contato]
+    getContato:function(i_cont){
+        return contatos[i_cont]
+    },
+    addContato:function(){
+        
     }
 
 }
